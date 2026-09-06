@@ -1,11 +1,14 @@
 package com.cassiokf.irdecor.init;
 
-import com.cassiokf.irdecor.IRDecor;
-import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
 import net.minecraftforge.oredict.OreDictionary;
 
+import com.cassiokf.irdecor.IRDecor;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+
 public class ModItems {
+
     public static Item IRON_ROD;
     public static Item STEEL_ROD;
 
@@ -18,8 +21,7 @@ public class ModItems {
     }
 
     private static Item registerItem(String name) {
-        Item item = new Item()
-            .setUnlocalizedName(name)
+        Item item = new Item().setUnlocalizedName(name)
             .setTextureName(IRDecor.MODID + ":" + name)
             .setCreativeTab(ModCreativeTab.INSTANCE);
         GameRegistry.registerItem(item, name, IRDecor.MODID);

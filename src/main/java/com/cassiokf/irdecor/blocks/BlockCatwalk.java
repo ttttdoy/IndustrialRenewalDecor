@@ -2,7 +2,6 @@ package com.cassiokf.irdecor.blocks;
 
 import java.util.List;
 
-import com.hbm.blocks.ModSoundTypes;
 import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
@@ -16,6 +15,7 @@ import net.minecraftforge.common.util.ForgeDirection;
 
 import com.cassiokf.irdecor.tileentity.TileEntityCatwalk;
 import com.cassiokf.irdecor.util.IRDirectionHelper;
+import com.hbm.blocks.ModSoundTypes;
 
 /**
  * Catwalk block with 6-way connection booleans and TileEntity for railing blacklist.
