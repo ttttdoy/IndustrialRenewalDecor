@@ -2,6 +2,7 @@ package com.cassiokf.irdecor.blocks;
 
 import java.util.List;
 
+import com.hbm.blocks.ModSoundTypes;
 import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
@@ -25,6 +26,7 @@ public class BlockCatwalk extends BlockIRConnectable {
 
     public BlockCatwalk() {
         super();
+        this.setStepSound(ModSoundTypes.grate);
     }
 
     @Override

@@ -1,5 +1,20 @@
 // Add any additional repositories for your dependencies here.
 
 repositories {
+//    maven {
+//        name = "Modrinth"
+//        url = "https://api.modrinth.com/maven"
+//    }
+    maven {
+        name "NTM Releases"
+        url "https://maven.ntmr.dev/releases"
+    }
+}
 
+dependencies {
+    def ntmBuildNumber = "5687" // Change this value according to the release you wish to use
+
+    implementation "com.hbm:HBM-NTM:1.0.27_X${ntmBuildNumber}:dev"
+    compileOnly "com.hbm:HBM-NTM:1.0.27_X${ntmBuildNumber}:src"
+//    implementation "maven.modrinth:o56psTwz:u63ixvSd"
 }

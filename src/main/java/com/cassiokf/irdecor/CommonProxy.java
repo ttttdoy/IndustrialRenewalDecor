@@ -1,8 +1,10 @@
 package com.cassiokf.irdecor;
 
 import com.cassiokf.irdecor.init.ModBlocks;
+import com.cassiokf.irdecor.init.ModItems;
 import com.cassiokf.irdecor.init.ModProperties;
 
+import com.cassiokf.irdecor.init.ModRecipes;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
@@ -12,6 +14,8 @@ public class CommonProxy {
 
     public void preInit(FMLPreInitializationEvent event) {
         ModBlocks.register();
+        ModItems.register();
+        ModRecipes.register();
         ModProperties.register();
     }
 

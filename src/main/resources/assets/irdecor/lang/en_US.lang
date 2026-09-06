@@ -33,3 +33,6 @@ tile.irdecor.sign_ra.name=Restricted Area Sign
 tile.irdecor.sign_c.name=Caution Sign
 
 itemGroup.irdecor=Industrial Renewal Decor
+
+item.iron_rod.name=Iron Rod
+item.steel_rod.name=Steel Rod

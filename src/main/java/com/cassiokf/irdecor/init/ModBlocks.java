@@ -25,33 +25,33 @@ import cpw.mods.fml.common.registry.GameRegistry;
 public class ModBlocks {
 
     // Phase 2
-    public static Block HANDRAIL_IRON;
-    public static Block HANDRAIL_STEEL;
-    public static Block BRACE_IRON;
-    public static Block BRACE_STEEL;
+    public static BlockHandRail HANDRAIL_IRON;
+    public static BlockHandRail HANDRAIL_STEEL;
+    public static BlockBrace BRACE_IRON;
+    public static BlockBrace BRACE_STEEL;
 
     // Phase 3
-    public static Block CATWALK_HATCH;
-    public static Block CATWALK_GATE;
-    public static Block RAZOR_WIRE;
+    public static BlockCatwalkHatch CATWALK_HATCH;
+    public static BlockCatwalkGate CATWALK_GATE;
+    public static BlockRazorWire RAZOR_WIRE;
 
     // Phase 4
-    public static Block PILLAR_IRON;
-    public static Block PILLAR_STEEL;
-    public static Block COLUMN_IRON;
-    public static Block COLUMN_STEEL;
-    public static Block CATWALK_IRON;
-    public static Block CATWALK_STEEL;
-    public static Block PLATFORM;
+    public static BlockPillar PILLAR_IRON;
+    public static BlockPillar PILLAR_STEEL;
+    public static BlockColumn COLUMN_IRON;
+    public static BlockColumn COLUMN_STEEL;
+    public static BlockCatwalk CATWALK_IRON;
+    public static BlockCatwalk CATWALK_STEEL;
+    public static BlockPlatform PLATFORM;
 
     // Hazard blocks
-    public static Block BLOCK_HAZARD;
-    public static Block CAUTION_HAZARD;
-    public static Block DEFECTIVE_HAZARD;
-    public static Block SAFETY_HAZARD;
-    public static Block RADIATION_HAZARD;
-    public static Block AISLE_HAZARD;
-    public static Block FIRE_HAZARD;
+    public static BlockIRBase BLOCK_HAZARD;
+    public static BlockIRBase CAUTION_HAZARD;
+    public static BlockIRBase DEFECTIVE_HAZARD;
+    public static BlockIRBase SAFETY_HAZARD;
+    public static BlockIRBase RADIATION_HAZARD;
+    public static BlockIRBase AISLE_HAZARD;
+    public static BlockIRBase FIRE_HAZARD;
 
     // Misc
     public static Block FIRE_EXTINGUISHER;
@@ -59,15 +59,15 @@ public class ModBlocks {
     public static Block FIRSTAID_KIT;
 
     // Signs
-    public static Block SIGN_HV;
-    public static Block SIGN_RA;
-    public static Block SIGN_C;
+    public static BlockSign SIGN_HV;
+    public static BlockSign SIGN_RA;
+    public static BlockSign SIGN_C;
 
     // Phase 5
-    public static Block CATWALK_STAIR_IRON;
-    public static Block CATWALK_STAIR_STEEL;
-    public static Block CATWALK_LADDER_IRON;
-    public static Block CATWALK_LADDER_STEEL;
+    public static BlockCatwalkStair CATWALK_STAIR_IRON;
+    public static BlockCatwalkStair CATWALK_STAIR_STEEL;
+    public static BlockCatwalkLadder CATWALK_LADDER_IRON;
+    public static BlockCatwalkLadder CATWALK_LADDER_STEEL;
 
     public static void register() {
         // Phase 2
@@ -123,7 +123,7 @@ public class ModBlocks {
         return new Block[] { SIGN_HV, SIGN_RA, SIGN_C };
     }
 
-    private static Block registerBlock(Block block, String name) {
+    private static <T extends Block> T registerBlock(T block, String name) {
         block.setBlockName(IRDecor.MODID + "." + name);
         GameRegistry.registerBlock(block, name);
         return block;
