@@ -8,7 +8,15 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 
-import com.cassiokf.irdecor.blocks.*;
+import com.cassiokf.irdecor.blocks.BlockBrace;
+import com.cassiokf.irdecor.blocks.BlockCatwalk;
+import com.cassiokf.irdecor.blocks.BlockCatwalkLadder;
+import com.cassiokf.irdecor.blocks.BlockCatwalkStair;
+import com.cassiokf.irdecor.blocks.BlockColumn;
+import com.cassiokf.irdecor.blocks.BlockHandRail;
+import com.cassiokf.irdecor.blocks.BlockIRBase;
+import com.cassiokf.irdecor.blocks.BlockPillar;
+import com.cassiokf.irdecor.blocks.BlockSign;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import it.unimi.dsi.fastutil.Pair;
